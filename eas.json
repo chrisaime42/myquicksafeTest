@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "version": ">= 5.2.0"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api-quicksafe080923-production.up.railway.app"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api-quicksafe080923-production.up.railway.app"
+      }
+    },
+    "preview3": {
+      "developmentClient": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api-quicksafe080923-production.up.railway.app"
+      }
+    },
+    "production": {
+      "developmentClient": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api-quicksafe080923-production.up.railway.app"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
